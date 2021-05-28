@@ -90,10 +90,7 @@ span {
 
 .stuff {
   padding: 2rem;
-}
-
-.content {
-  border-radius: 1rem;
+  border-radius: 2rem 0 0 2rem;
 }
 
 .xl {
@@ -110,8 +107,8 @@ span {
 }
 
 .img-container {
-  opacity: 0.4;
   background: var(--accent);
+  border-radius: 0 2rem 2rem 0;
 }
 
 /* Media Queries */
@@ -123,6 +120,14 @@ span {
     top: 9rem;
     flex-wrap: wrap-reverse;
     overflow: hidden;
+  }
+
+  .stuff {
+    border-radius: 0;
+  }
+
+  .img-container {
+    border-radius: 0;
   }
 
   img {
