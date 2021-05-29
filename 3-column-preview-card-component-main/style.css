@@ -110,7 +110,7 @@ a {
   background-color: transparent;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 374px) {
   .container {
     overflow: auto;
     top: 60%;
