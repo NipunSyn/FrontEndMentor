@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;1,700&display=swap");
+
+:root {
+  --darkViolet: hsl(256, 26%, 20%);
+  --veryLightGray: hsl(0, 0%, 98%);
+  --grayishBlue: hsl(216, 30%, 68%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  margin-bottom: 80px;
+}
+
+nav {
+  display: flex;
+  padding: 1% 8%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  flex: 1;
+  text-align: right;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 4px 20px;
+  position: relative;
+}
+
+nav h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.navbar a {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.navbar a:hover {
+  opacity: 1;
+}
+
+.button {
+  padding: 5px 14px;
+}
+
+#navbtn {
+  border: 1px solid black;
+  opacity: 1;
+}
+
+#navbtn:hover {
+  color: white;
+  border: 1px solid var(--darkViolet);
+  background-color: var(--darkViolet);
+  transition: 0.5s;
+}
+
+nav .fas {
+  display: none; /* don't want to display it on the desktop page */
+}
+
+.container {
+  color: #fff;
+  width: 100%;
+  height: 65vh;
+  background: var(--darkViolet);
+  position: relative;
+  display: flex;
+  padding: 50px 150px;
+  justify-content: space-around;
+  background-image: url(./images/bg-pattern-intro-right-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 30% 90%;
+  background-position: 100% 0;
+}
+.container a {
+  display: inline-block;
+  border: 1px solid #fff;
+  color: white;
+}
+
+.container a:hover {
+  background-color: #fff;
+  color: var(--darkViolet);
+  transition: 0.5s;
+}
+
+.text-box {
+  width: 50%;
+  align-self: center;
+}
+
+.text-box h1 {
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 50px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.text-box h1::before {
+  content: "";
+  width: 20%;
+  height: 1px;
+  background: var(--darkViolet);
+  display: block;
+  padding-top: 75px;
+  border-top: 2px solid var(--grayishBlue);
+}
+
+.desc1 {
+  color: #fff;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.image-box {
+  width: 30vw;
+}
+
+.hero img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.container2 {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  margin-left: 11%;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 50px;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+
+.box {
+  width: 26%;
+}
+
+.box h2 {
+  margin-bottom: 12px;
+}
+
+.desc2 {
+  color: #000;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.dark-box {
+  width: 80%;
+  height: 22vh;
+  padding: 60px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--darkViolet);
+  color: #fff;
+  font-family: "DM Serif Display", sans-serif;
+  position: absolute;
+  left: 8%;
+  margin-bottom: 100px;
+  background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  background-size: 30% 100%;
+}
+
+.dark {
+  height: 100%;
+}
+
+.darkbox-heading{
+    flex: 2;
+}
+
+.dark-box h1 {
+    margin-top: -20px;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.darkbtn {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.darkbtn:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.5s;
+}
