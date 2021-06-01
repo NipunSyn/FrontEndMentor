@@ -36,11 +36,13 @@
         <h2 class="class">INSURE</h2>
         <div class="navbar">
           <i class="fas fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a href="#">How we work</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#" class="button" id="navbtn">View plans</a></li>
+          <ul class="navlist">
+            <li class="navitems"><a href="#">How we work</a></li>
+            <li class="navitems"><a href="#">Blog</a></li>
+            <li class="navitems"><a href="#">Account</a></li>
+            <li class="navitems">
+              <a href="#" class="button" id="navbtn">View plans</a>
+            </li>
           </ul>
           <i class="fas fa-bars" onclick="showMenu()"></i>
         </div>
@@ -161,5 +163,16 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Nipun Tewari</a>.
     </div>
+
+    <!-- JavaScript -->
+    <script>
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200%";
+      }
+    </script>
   </body>
 </html>

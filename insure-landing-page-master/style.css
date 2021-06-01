@@ -250,7 +250,6 @@ nav .fas {
   margin-bottom: 25px;
 }
 
-
 .social i {
   padding-left: 10px;
   opacity: 0.7;
@@ -283,4 +282,155 @@ nav .fas {
 
 .footer a:hover {
   opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 400px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    background-color: hsl(270, 9%, 17%);
+    display: block;
+    height: 90vh;
+    margin-bottom: 0;
+
+    background-image: url(./images/bg-pattern-mobile-nav.svg);
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+  }
+
+  nav .fas {
+    display: block; /* displaying it on small screens */
+    color: #fff;
+    margin: 10%;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  nav .class {
+    padding-bottom: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    background-color: #fff;
+  }
+
+  .navbar .navlist .navitems {
+    padding: 25px;
+    display: block;
+    text-align: center;
+  }
+
+  .navlist .navitems a {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  #navbtn {
+    padding: 10px 90px;
+    border: 2px solid white;
+  }
+
+  .container {
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-direction: column-reverse;
+    background-image: none;
+  }
+
+  .text-box h1::before {
+    display: none;
+  }
+  .text-box {
+    width: 100%;
+    padding: 40px;
+    background-image: url(./images/bg-pattern-intro-left-mobile.svg);
+    background-repeat: no-repeat;
+  }
+
+  .text-box h1 {
+    font-size: 30px;
+  }
+
+  .image-box {
+    width: 100vw;
+
+    /* position: absolute;
+    top: 0; */
+  }
+
+  .hero h1 {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .hero .container2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container2 .box {
+    width: 100%;
+  }
+
+  .dark {
+    padding: 0;
+    width: 100%;
+  }
+
+  .dark-box {
+    margin: 0;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dark-box .dark h1 {
+    font-size: 20px;
+  }
+
+  .darkbox-button {
+    padding: 0 80px;
+  }
+
+  .footer {
+    padding: 0;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box.foot-box {
+    width: 50vw;
+    margin-bottom: 20px;
+    padding: 0 auto;
+    text-align: center;
+  }
+
+  .footer-flexbox {
+    padding: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
