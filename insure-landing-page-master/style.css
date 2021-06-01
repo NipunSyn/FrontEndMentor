@@ -238,6 +238,8 @@ nav .fas {
   padding: 20px 120px;
   font-family: "Karla", sans-serif;
   font-size: 16px;
+  background-image: url(./images/bg-pattern-footer-desktop.svg);
+  background-repeat: no-repeat;
 }
 
 .footer-top {
