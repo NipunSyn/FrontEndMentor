@@ -243,7 +243,20 @@ nav .fas {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
+  padding: 25px 0px 25px 0px;
+  border-bottom: 2px solid gray;
+  margin-bottom: 25px;
+}
+
+
+.social i {
+  padding-left: 10px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.social i:hover {
+  opacity: 1;
 }
 
 .footer-flexbox {
