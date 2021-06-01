@@ -13,6 +13,11 @@
   margin: 0;
 }
 
+body {
+  position: relative;
+  overflow: visible;
+}
+
 img {
   width: 100%;
 }
@@ -47,7 +52,7 @@ nav {
   position: relative;
 }
 
-nav h2 {
+.class {
   font-family: "Karla", sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -167,6 +172,9 @@ nav .fas {
 }
 
 .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 26%;
 }
 
@@ -190,7 +198,7 @@ nav .fas {
   background-color: var(--darkViolet);
   color: #fff;
   font-family: "DM Serif Display", sans-serif;
-  position: absolute;
+  position: relative;
   left: 8%;
   margin-bottom: 100px;
   background-image: url(./images/bg-pattern-how-we-work-desktop.svg);
@@ -203,12 +211,12 @@ nav .fas {
   height: 100%;
 }
 
-.darkbox-heading{
-    flex: 2;
+.darkbox-heading {
+  flex: 2;
 }
 
 .dark-box h1 {
-    margin-top: -20px;
+  margin-top: -20px;
   font-size: 30px;
   line-height: 30px;
   text-align: left;
@@ -223,4 +231,41 @@ nav .fas {
   background-color: #fff;
   color: #000;
   transition: 0.5s;
+}
+
+.footer {
+  background-color: var(--veryLightGray);
+  padding: 20px 120px;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.footer-flexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer h2 {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer a {
+  opacity: 0.7;
+}
+
+.footer a:hover {
+  opacity: 1;
 }
