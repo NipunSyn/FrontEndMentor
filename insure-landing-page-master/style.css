@@ -285,19 +285,19 @@ nav .fas {
 
 /* Media Queries */
 
-@media (min-width: 400px) and (max-width: 1000px) {
+@media (min-width: 500px) and (max-width: 1000px) {
   .container {
     height: auto;
     flex-wrap: wrap-reverse;
     margin-bottom: 50px;
   }
 
-  .image-box{
+  .image-box {
     width: 400px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   * {
     box-sizing: border-box;
     padding: 0;
